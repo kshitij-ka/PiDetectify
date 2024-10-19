@@ -6,8 +6,10 @@ import requests
 from datetime import datetime
 
 # ntfy.sh topic (choose your unique topic name)
-ntfy_topic = "K3R3wHq4w9mwcwNd"  # Replace with your ntfy.sh topic
-ntfy_url = f"https://ntfy.sh/{ntfy_topic}"
+rpi-ip = "localhost:80"
+ntfy_topic = "motion-sensing"  # Replace with your ntfy.sh topic
+ntfy_url = f"http://{rpi-ip}/{ntfy_topic}"
+# If using ntfy.sh server and not the local docker container, set rpi-ip = "ntfy.sh"
 
 # Initialize the camera
 picam2 = Picamera2()
