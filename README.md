@@ -65,14 +65,21 @@ sudo systemctl enable ufw
     # Get your public IP by using something like http://ip.me, and paste your public IP there
     ```
 
+
 8. Create and run the containers:
 ```shell
 docker compose up -d
 ```
 
-9. Check if ntfy.sh is setup correctly:
+9. Check if ntfy.sh and wireguard tunnel is setup correctly:
+
     - Visit `<RASPBERRYPI-IP>:80` from a browser. Make sure Raspberry Pi and the other device are on the same network. On Raspberry Pi, you can visit `localhost:8080`
+
     - If you see a dashboard, it implies Docker and ntfy.sh were setup correctly.
+
+    - Visit `<RASPBERRYPI-IP>:51821`, enter the password which you specified in the beginning (NOT the password hash, the password).
+
+    - Add new clients to remotely connect and receive notifications.
 
 10. In ntfy.sh dashboard, in the left menu at the bottom, click on `Subscribe to topic`, and specify the topic name: `motion-sensing`
 
