@@ -4,6 +4,8 @@ line="=================================="
 
 ###############################################
 
+cat crd.txt
+
 # Install dependencies
 sudo apt update
 
@@ -41,5 +43,7 @@ sudo apt install -y python3-requests # For notifications
 
 echo -e "$line\nSetting up Docker\n$line"
 ./docker-setup.sh
-echo -e "$line\nDocker installation complete\n$line"
 
+echo -e "$line\nDocker installation complete"
+echo -e "## DESIGNED AND ENGINEERED BY KSHITIJ"
+echo -e "## END OF SCRIPT\n$line"

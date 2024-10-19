@@ -37,9 +37,7 @@ sudo usermod -aG docker $USER
 sudo chown $USER:docker /var/run/docker.sock
 
 # Show running containers
+echo -e "$line\nhello-world container showing up here implies everything worked out as expected."
 docker ps -a
-
-echo -e "\n$line"
-echo -e "Docker setup complete."
-echo -e "## Designed and Engineered by Kshitij"
 echo -e "$line\n"
+
