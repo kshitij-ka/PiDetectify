@@ -1,7 +1,6 @@
 #!/bin/bash
 
 line="=================================="
-PROJECT_DIR=/home/$(whoami)/iot-mini
 
 ###############################################
 
@@ -40,5 +39,7 @@ sudo apt install -y python3-requests # For notifications
 
 ###############################################
 
-cp main.py $PROJECT_DIR/
-cd $PROJECT_DIR
+echo -e "$line\nSetting up Docker\n$line"
+./docker-setup.sh
+echo -e "$line\nDocker installation complete\n$line"
+
