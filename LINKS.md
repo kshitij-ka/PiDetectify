@@ -3,3 +3,6 @@
 
 
 - Guide 2: https://www.instructables.com/Raspberry-Pi-Motion-Detection-Security-Camera/
+
+- Generate bcryt hash: https://github.com/wg-easy/wg-easy/blob/master/How_to_generate_an_bcrypt_hash.md
+- wireguard tunnel repo: https://github.com/wg-easy/wg-easy

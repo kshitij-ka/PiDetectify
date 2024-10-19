@@ -49,10 +49,10 @@ sudo systemctl enable ufw
 5. Setup Wireguard:
     - Generate bcrypt password hash by running:
     ```shell
-    docker run -it ghcr.io/wg-easy/wg-easy wgpw <PASSWORD-HERE>
+    docker run -it ghcr.io/wg-easy/wg-easy wgpw '<PASSWORD_HERE>'
     ```
 
-    This will return a `PASSWORD_HASH`
+    This will return a `PASSWORD_HASH`. For addition information, checkout their [guide](https://github.com/wg-easy/wg-easy).
 
     - Create a file in the current directory called `.env`
 
