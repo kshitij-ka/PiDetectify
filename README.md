@@ -76,5 +76,10 @@ docker compose up -d
 
 10. In ntfy.sh dashboard, in the left menu at the bottom, click on `Subscribe to topic`, and specify the topic name: `motion-sensing`
 
+11. Lastly, run the `main.py` file to view motion detection window on screen and send notifications on detecting motion:
+```shell
+python3 main.py
+```
+
 > [!NOTE]
 > Make sure you're in the directory where you cloned this repo while running all these commands.
