@@ -9,6 +9,12 @@ This project utilizes [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi)
 
 ## Read detailed description in [ABOUT.md](https://git.kska.io/notkshitij/PiDetectify/src/branch/main/ABOUT.md).
 
+## Demo images
+
+Motion Detection Window | Notification Sent | Notification Received
+--- | --- | ---
+![Motion](Demo/Motion%20Detection%20Window.png) | ![Sent](Demo/Notification%20Sent.png) | ![Received](Demo/Notification%20Received.jpeg)
+
 ## Prerequisites:
 1. Raspberry Pi (only tested on 3B+, should work on 2/4/5 as well)
 2. Pi Camera
