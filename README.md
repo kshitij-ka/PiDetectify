@@ -3,9 +3,11 @@
 This project utilizes [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi) for processing and [Pi Camera](https://www.raspberrypi.com/documentation/accessories/camera.html) to detect motion. Upon detecting motion, it sends a notification to the user via [ntfy.sh](https://ntfy.sh). If the user is not on the same network as the Raspberry Pi, notifications are sent over a VPN using a [WireGuard tunnel](https://www.wireguard.com). Both ntfy and WireGuard run within their own separate [Docker](https://www.docker.com) containers, and everything runs locally.
 
 > [!NOTE]
-> I created this for my college project. I do not plan on adding more features to it. If you encounter any bugs, feel free to create an [issue](https://git.kska.io/notkshitij/PiDetectify/issues/new) (I am more active on [KSKA Git](https://git.kska.io/notkshitij/PiDetectify) than [GitHub](https://github.com/kshitij-ka/PiDetectify).)
+> I created this for my college project. I do not plan on adding more features to it. If you encounter any bugs, feel free to create an [issue](https://git.kska.io/notkshitij/PiDetectify/issues/new) (I am more active on [KSKA Git](https://git.kska.io/notkshitij/PiDetectify) than on [GitHub](https://github.com/kshitij-ka/PiDetectify).)
 
 ---
+
+## Read detailed description in [ABOUT.md](https://git.kska.io/notkshitij/PiDetectify/src/branch/main/ABOUT.md).
 
 ## Prerequisites:
 1. Raspberry Pi (only tested on 3B+, should work on 2/4/5 as well)
