@@ -51,7 +51,7 @@ This project utilizes Raspberry Pi with Pi Camera to detect motion in real-time.
   - Exposes port 80 and uses the `binwiederhier/ntfy` Docker image.
   - Configured with timezone IST and persistent storage for cache and config.
 
-`wg-easy`: A WireGuard VPN container that allows secure access to the Raspberry Pi.
+- `wg-easy`: A WireGuard VPN container that allows secure access to the Raspberry Pi.
 
   - Exposes ports `51820/udp` and `51821/tcp`.
   - Uses environment variables for configuration and requires a password hash for login.
