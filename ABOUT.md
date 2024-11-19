@@ -65,7 +65,8 @@ This project utilizes Raspberry Pi with Pi Camera to detect motion in real-time.
 - Capture and compare two consecutive frames to detect motion using OpenCV’s frame difference method.
 - If motion is detected, the script will send a notification to the configured `ntfy.sh` topic (`motion-sensing` in this case by default).
 
-> [!TIP] You can customize the topic name in the `main.py` file by modifying the `ntfy_topic` variable. If you are using the local Docker instance for `ntfy.sh`, the script will use `localhost:80` by default. You can change that too by modifying the `rpi_ip` variable.
+> [!TIP]
+> You can customize the topic name in the `main.py` file by modifying the `ntfy_topic` variable. If you are using the local Docker instance for `ntfy.sh`, the script will use `localhost:80` by default. You can change that too by modifying the `rpi_ip` variable.
 
 ## Customization
 
