@@ -1,6 +1,9 @@
-# IoT Mini Project - 2024
+# PiDetectify
 
-This mini project uses picamera to detect motion, upon detecting motion, it sends notification to devices subscribed to the channel using ntfy.sh
+This project utilizes [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi) for processing and [Pi Camera](https://www.raspberrypi.com/documentation/accessories/camera.html) to detect motion. Upon detecting motion, it sends a notification to the user via [ntfy.sh](https://ntfy.sh). If the user is not on the same network as the Raspberry Pi, notifications are sent over a VPN using a [WireGuard tunnel](https://www.wireguard.com). Both ntfy and WireGuard run within their own separate [Docker](https://www.docker.com) containers, and everything runs locally.
+
+> [!NOTE]
+> I created this for my college project. I do not plan on adding more features to it. If you encounter any bugs, feel free to create an [issue](https://git.kska.io/notkshitij/PiDetectify/issues/new) (I am more active on [KSKA Git](https://git.kska.io/notkshitij/PiDetectify) than [GitHub](https://github.com/kshitij-ka/PiDetectify).)
 
 ---
 
@@ -17,19 +20,18 @@ This mini project uses picamera to detect motion, upon detecting motion, it send
 
 1. Clone this repository:
 ```shell
-git clone https://git.kska.io/notkshitij/iot-mini.git
+git clone https://git.kska.io/notkshitij/PiDetectify.git
 ```
 
 2. Change current working directory:
 ```shell
-cd ./iot-mini
+cd ./PiDetectify
 ```
 
 3. Run `setup.sh`:
 ```shell
 ./setup.sh
 ```
-
 
 4. Setup firewall on Raspberry Pi:
 ```shell
@@ -47,6 +49,7 @@ sudo systemctl enable ufw
 ```
 
 5. Setup Wireguard:
+
     - Generate bcrypt password hash by running:
     ```shell
     docker run -it ghcr.io/wg-easy/wg-easy wgpw '<PASSWORD_HERE>'
@@ -64,7 +67,6 @@ sudo systemctl enable ufw
     # Inside single quotations, paste the password hash for PASS variable
     # Get your public IP by using something like http://ip.me, and paste your public IP there
     ```
-
 
 8. Create and run the containers:
 ```shell
@@ -90,3 +92,5 @@ python3 main.py
 
 > [!NOTE]
 > Make sure you're in the directory where you cloned this repo while running all these commands.
+
+---
