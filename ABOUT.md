@@ -31,13 +31,13 @@ This project utilizes Raspberry Pi with Pi Camera to detect motion in real-time.
 - Install `python3`, `pip`, and necessary libraries.
 - Install camera libraries such as `picamera2`, `opencv`, and image processing libraries.
 - Install `requests` for HTTP notifications.
-- Set up Docker and start the `ntfy.sh` container using the [docker-setup.sh](https://git.kska.io/notkshitij/PiDetectify/src/branch/main/docker-setup.sh) script.
+- Set up Docker and start the `ntfy.sh` container using the [docker-setup.sh](docker-setup.sh) script.
 
 ## docker-setup.sh
 
 - Remove any conflicting Docker packages.
 - Add Docker’s official apt repository and install Docker and Docker Compose.
-- Set up the `ntfy.sh` and `wg-easy` containers using the provided [docker-compose.yaml](https://git.kska.io/notkshitij/PiDetectify/src/branch/main/docker-compose.yaml).
+- Set up the `ntfy.sh` and `wg-easy` containers using the provided [docker-compose.yaml](docker-compose.yaml).
 - Ensure Docker runs without sudo (add the current user to the Docker group).
 - Test the Docker installation by running a "hello-world" container.
 
