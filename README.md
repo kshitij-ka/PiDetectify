@@ -7,7 +7,7 @@ This project utilizes [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi)
 
 ---
 
-## Read detailed description in [ABOUT.md](https://git.kska.io/notkshitij/PiDetectify/src/branch/main/ABOUT.md).
+## Read detailed description in [ABOUT.md](ABOUT.md).
 
 ## Demo images
 
